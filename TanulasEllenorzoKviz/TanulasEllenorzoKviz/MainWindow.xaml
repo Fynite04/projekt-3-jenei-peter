@@ -1,0 +1,16 @@
+﻿<Window x:Class="TanulasEllenorzoKviz.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TanulasEllenorzoKviz"
+        mc:Ignorable="d"
+        Title="Tanulás Ellenőrző Kvíz" Height="400" Width="600">
+    <Grid>
+        <Label Content="Tantárgy:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="tantargy_CBx" HorizontalAlignment="Left" Margin="68,10,0,0" VerticalAlignment="Top" Width="152"/>
+        <Label Content="Témakör:" HorizontalAlignment="Left" Margin="246,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="temakor_CBx" HorizontalAlignment="Left" Margin="309,10,0,0" VerticalAlignment="Top" Width="152"/>
+        <Button x:Name="tesztInditasa_Btn" Content="Teszt indítása" HorizontalAlignment="Left" Margin="472,10,0,0" VerticalAlignment="Top" Height="22" Width="107"/>
+    </Grid>
+</Window>
