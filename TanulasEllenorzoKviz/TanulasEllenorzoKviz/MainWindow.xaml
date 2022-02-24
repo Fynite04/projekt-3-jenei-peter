@@ -5,12 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TanulasEllenorzoKviz"
         mc:Ignorable="d"
-        Title="Tanulás Ellenőrző Kvíz" Height="400" Width="600">
+        Title="Tanulás Ellenőrző Kvíz" Height="420" Width="600" ResizeMode="CanMinimize">
     <Grid>
         <Label Content="Tantárgy:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="tantargy_CBx" HorizontalAlignment="Left" Margin="68,10,0,0" VerticalAlignment="Top" Width="152"/>
-        <Label Content="Témakör:" HorizontalAlignment="Left" Margin="246,10,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="temakor_CBx" HorizontalAlignment="Left" Margin="309,10,0,0" VerticalAlignment="Top" Width="152"/>
-        <Button x:Name="tesztInditasa_Btn" Content="Teszt indítása" HorizontalAlignment="Left" Margin="472,10,0,0" VerticalAlignment="Top" Height="22" Width="107"/>
+        <Label Content="Témakör:" HorizontalAlignment="Left" Margin="226,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="temakor_CBx" HorizontalAlignment="Left" Margin="289,10,0,0" VerticalAlignment="Top" Width="152" IsEnabled="False"/>
+        <Button x:Name="tesztInditasa_Btn" Content="Teszt indítása" HorizontalAlignment="Left" Margin="446,10,0,0" VerticalAlignment="Top" Height="22" Width="133" IsEnabled="False"/>
+        <Label HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Width="569" Height="90" FontSize="18">
+            <TextBlock TextWrapping="WrapWithOverflow" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend et augue eget elementum. Cras tempor mauris quis lectus hendrerit euismod eu a quam. Vestibulum sed condimentum urna." Width="559"/>
+        </Label>
+        <Button x:Name="aValasz_Btn" Content="Válasz A" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="65" Width="275"/>
+        <Button x:Name="bValasz_Btn" Content="Válasz B" HorizontalAlignment="Left" Margin="304,0,0,0" VerticalAlignment="Center" Height="65" Width="275"/>
+        <Button x:Name="cValasz_Btn" Content="Válasz C" HorizontalAlignment="Left" Margin="10,235,0,0" VerticalAlignment="Top" Height="65" Width="275"/>
+        <Button x:Name="dValasz_Btn" Content="Válasz D" HorizontalAlignment="Left" Margin="304,235,0,0" VerticalAlignment="Top" Height="65" Width="275"/>
+        <Button x:Name="next_Btn" Content="🡪" HorizontalAlignment="Left" Margin="539,339,0,0" VerticalAlignment="Top" Width="40" Height="35" FontSize="20"/>
+        <Button x:Name="prev_Btn" Content="🡨" HorizontalAlignment="Left" Margin="10,339,0,0" VerticalAlignment="Top" Width="40" Height="35" FontSize="20"/>
+        <Rectangle HorizontalAlignment="Left" Height="18" Margin="55,348,0,0" Stroke="Black" VerticalAlignment="Top" Width="479"/>
     </Grid>
 </Window>

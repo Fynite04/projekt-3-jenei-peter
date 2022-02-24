@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace TanulasEllenorzoKviz
 {
@@ -23,6 +24,14 @@ namespace TanulasEllenorzoKviz
         public MainWindow()
         {
             InitializeComponent();
+            FajlokBeolvasasa();
+        }
+
+        void FajlokBeolvasasa()
+        {
+
+
+            string[] fajlok = Directory.GetFiles(@".\Data\", "*.txt");
         }
     }
 }
