@@ -10,10 +10,10 @@
         <Label Content="Tantárgy:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="tantargy_CBx" HorizontalAlignment="Left" Margin="68,10,0,0" VerticalAlignment="Top" Width="152" SelectionChanged="tantargy_CBx_SelectionChanged"/>
         <Label Content="Témakör:" HorizontalAlignment="Left" Margin="226,10,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="temakor_CBx" HorizontalAlignment="Left" Margin="289,10,0,0" VerticalAlignment="Top" Width="152" IsEnabled="False"/>
-        <Button x:Name="tesztInditasa_Btn" Content="Teszt indítása" HorizontalAlignment="Left" Margin="446,10,0,0" VerticalAlignment="Top" Height="22" Width="133" IsEnabled="False"/>
-        <Label HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Width="569" Height="90" FontSize="18">
-            <TextBlock TextWrapping="WrapWithOverflow" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend et augue eget elementum. Cras tempor mauris quis lectus hendrerit euismod eu a quam. Vestibulum sed condimentum urna." Width="559"/>
+        <ComboBox x:Name="temakor_CBx" HorizontalAlignment="Left" Margin="289,10,0,0" VerticalAlignment="Top" Width="152" IsEnabled="False" SelectionChanged="temakor_CBx_SelectionChanged"/>
+        <Button x:Name="tesztInditasa_Btn" Content="Teszt indítása" HorizontalAlignment="Left" Margin="446,10,0,0" VerticalAlignment="Top" Height="22" Width="133" IsEnabled="False" Click="tesztInditasa_Btn_Click"/>
+        <Label HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Width="569" Height="90" FontSize="18" Background="#FFDDDDDD">
+            <TextBlock x:Name="kerdes_Lbl" TextWrapping="WrapWithOverflow" Width="559" FontStretch="Normal" Height="80"><Run Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend et augue eget elementum. Cras tempor mauris quis lectus hendrerit"/><Run Language="hu-hu" Text="."/></TextBlock>
         </Label>
         <Button x:Name="aValasz_Btn" Content="Válasz A" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="65" Width="275"/>
         <Button x:Name="bValasz_Btn" Content="Válasz B" HorizontalAlignment="Left" Margin="304,0,0,0" VerticalAlignment="Center" Height="65" Width="275"/>
