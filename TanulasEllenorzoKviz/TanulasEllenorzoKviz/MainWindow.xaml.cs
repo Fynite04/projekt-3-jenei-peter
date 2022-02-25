@@ -14,12 +14,21 @@ namespace TanulasEllenorzoKviz
         List<string> tantargyakNevLista = new List<string>();
         List<string> temakorokLista = new List<string>();
         List<KvizFeladat> osszesFeladatLista = new List<KvizFeladat>();
-        //List<KvizFeladat> megjelenitettFeladatok = new List<KvizFeladat>();
+        KvizKezelo kviz;
 
         public MainWindow()
         {
             InitializeComponent();
             FajlokBeolvasasa();
+
+            kerdes_BG.Visibility = Visibility.Hidden;
+            aValasz_Btn.Visibility = Visibility.Hidden;
+            bValasz_Btn.Visibility = Visibility.Hidden;
+            cValasz_Btn.Visibility = Visibility.Hidden;
+            dValasz_Btn.Visibility = Visibility.Hidden;
+            index_Lbl.Visibility = Visibility.Hidden;
+            prev_Btn.Visibility = Visibility.Hidden;
+            next_Btn.Visibility = Visibility.Hidden;
 
             tantargy_CBx.ItemsSource = tantargyakNevLista;
         }
@@ -65,7 +74,7 @@ namespace TanulasEllenorzoKviz
             var tizFeladat = RandomKvizFeladatok((string)tantargy_CBx.SelectedItem, (string)temakor_CBx.SelectedItem);
             //var kevertValaszok = ValaszKevero(tizFeladat[0].Valaszok);
 
-            KvizKezelo kviz = new KvizKezelo(tizFeladat, kerdes_Lbl, kerdes_BG, aValasz_Btn, bValasz_Btn, cValasz_Btn, dValasz_Btn, index_Lbl);
+            kviz = new KvizKezelo(tizFeladat, kerdes_Lbl, kerdes_BG, aValasz_Btn, bValasz_Btn, cValasz_Btn, dValasz_Btn, index_Lbl, prev_Btn, next_Btn);
             kviz.Mutasd();
         }
 
@@ -91,6 +100,24 @@ namespace TanulasEllenorzoKviz
             return tizFeladat;
         }
 
-        
+        // NEXT
+        private void next_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            kviz.IranyGomb(true);
+            kviz.Mutasd();
+        }
+
+        // PREVIOUS
+        private void prev_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            kviz.IranyGomb(false);
+            kviz.Mutasd();
+        }
+
+        private void valasz_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
     }
 }
