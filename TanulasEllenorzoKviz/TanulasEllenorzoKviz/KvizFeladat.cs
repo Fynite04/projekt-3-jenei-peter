@@ -11,7 +11,7 @@ namespace TanulasEllenorzoKviz
         string tantargy;
         string temakor;
         string kerdes;
-        string[] valaszok = new string[4];
+        List<string> valaszok = new List<string>();
 
         public KvizFeladat(string sor, string tantargy)
         {
@@ -21,15 +21,16 @@ namespace TanulasEllenorzoKviz
 
             this.temakor = sorSplitArr[0];
             this.kerdes = sorSplitArr[1];
-            this.valaszok[0] = sorSplitArr[2];
-            this.valaszok[1] = sorSplitArr[3];
-            this.valaszok[2] = sorSplitArr[4];
-            this.valaszok[3] = sorSplitArr[5];
+            this.valaszok.Add(sorSplitArr[2]);
+            this.valaszok.Add(sorSplitArr[3]);
+            this.valaszok.Add(sorSplitArr[4]);
+            this.valaszok.Add(sorSplitArr[5]);
         }
 
         public string Tantargy { get => tantargy; }
         public string Temakor { get => temakor; }
         public string Kerdes { get => kerdes; }
-        public string[] Valaszok { get => valaszok; }
+        public List<string> Valaszok { get => valaszok; }
+        public string JoValasz { get => valaszok[0]; }
     }
 }

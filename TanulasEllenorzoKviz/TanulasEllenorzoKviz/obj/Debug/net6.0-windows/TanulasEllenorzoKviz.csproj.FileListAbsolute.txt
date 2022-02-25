@@ -1,8 +1,5 @@
 D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\bin\Debug\net6.0-windows\TanulasEllenorzoKviz.exe
-D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\bin\Debug\net6.0-windows\TanulasEllenorzoKviz.deps.json
-D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\bin\Debug\net6.0-windows\TanulasEllenorzoKviz.runtimeconfig.json
 D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\bin\Debug\net6.0-windows\TanulasEllenorzoKviz.dll
-D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\bin\Debug\net6.0-windows\TanulasEllenorzoKviz.pdb
 D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\obj\Debug\net6.0-windows\TanulasEllenorzoKviz.csproj.AssemblyReference.cache
 D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\obj\Debug\net6.0-windows\MainWindow.g.cs
 D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\obj\Debug\net6.0-windows\App.g.cs
@@ -15,7 +12,10 @@ D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\
 D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\obj\Debug\net6.0-windows\TanulasEllenorzoKviz.AssemblyInfo.cs
 D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\obj\Debug\net6.0-windows\TanulasEllenorzoKviz.csproj.CoreCompileInputs.cache
 D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\obj\Debug\net6.0-windows\TanulasEllenorzoKviz.dll
-D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\obj\Debug\net6.0-windows\TanulasEllenorzoKviz.pdb
-D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\obj\Debug\net6.0-windows\TanulasEllenorzoKviz.genruntimeconfig.cache
 D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\obj\Debug\net6.0-windows\ref\TanulasEllenorzoKviz.dll
+D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\obj\Debug\net6.0-windows\TanulasEllenorzoKviz.pdb
+D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\bin\Debug\net6.0-windows\TanulasEllenorzoKviz.deps.json
+D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\bin\Debug\net6.0-windows\TanulasEllenorzoKviz.runtimeconfig.json
 D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\bin\Debug\net6.0-windows\ref\TanulasEllenorzoKviz.dll
+D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\bin\Debug\net6.0-windows\TanulasEllenorzoKviz.pdb
+D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\obj\Debug\net6.0-windows\TanulasEllenorzoKviz.genruntimeconfig.cache

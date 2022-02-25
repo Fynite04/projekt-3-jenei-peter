@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Windows;
 
 namespace TanulasEllenorzoKviz
@@ -13,7 +14,7 @@ namespace TanulasEllenorzoKviz
         List<string> tantargyakNevLista = new List<string>();
         List<string> temakorokLista = new List<string>();
         List<KvizFeladat> osszesFeladatLista = new List<KvizFeladat>();
-        List<KvizFeladat> megjelenitettFeladatok = new List<KvizFeladat>();
+        //List<KvizFeladat> megjelenitettFeladatok = new List<KvizFeladat>();
 
         public MainWindow()
         {
@@ -61,9 +62,11 @@ namespace TanulasEllenorzoKviz
         // START
         private void tesztInditasa_Btn_Click(object sender, RoutedEventArgs e)
         {
-            megjelenitettFeladatok = RandomKvizFeladatok((string)tantargy_CBx.SelectedItem, (string)temakor_CBx.SelectedItem);
-            kerdes_Lbl.Text = megjelenitettFeladatok[0].Kerdes;
-            aValasz_Btn.Content = megjelenitettFeladatok[0].Valaszok[0];
+            var tizFeladat = RandomKvizFeladatok((string)tantargy_CBx.SelectedItem, (string)temakor_CBx.SelectedItem);
+            //var kevertValaszok = ValaszKevero(tizFeladat[0].Valaszok);
+
+            KvizKezelo kviz = new KvizKezelo(tizFeladat, kerdes_Lbl, kerdes_BG, aValasz_Btn, bValasz_Btn, cValasz_Btn, dValasz_Btn, index_Lbl);
+            kviz.Mutasd();
         }
 
         List<KvizFeladat> RandomKvizFeladatok(string tantargy, string temakor)
@@ -77,15 +80,17 @@ namespace TanulasEllenorzoKviz
 
             List<KvizFeladat> tizFeladat = new List<KvizFeladat>();
 
-            Random rnd = new Random();
+            Random rng = new Random();
             for (int i = 0; i < 10; i++)
             {
-                int index = rnd.Next(tmpFeladatLista.Count);
+                int index = rng.Next(tmpFeladatLista.Count);
                 tizFeladat.Add(tmpFeladatLista[index]);
                 tmpFeladatLista.RemoveAt(index);
             }
 
             return tizFeladat;
         }
+
+        
     }
 }
