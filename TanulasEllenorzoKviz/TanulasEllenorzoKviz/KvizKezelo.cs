@@ -20,17 +20,18 @@ namespace TanulasEllenorzoKviz
         TextBlock kerdes_Lbl;
         Label kerdes_BG;
         List<Button> valaszGombok = new List<Button>();
+        List<Button> lapGombok;
         Button prev_Btn;
         Button next_Btn;
         Button kiertekeles_Btn;
 
-        public KvizKezelo(List<KvizFeladat> tizFeladat, TextBlock kerdes_Lbl, Label kerdes_BG, Button aValasz, Button bValasz, Button cValasz, Button dValasz, Label index_Lbl, Button prev_Btn, Button next_Btn, Button kiertekeles_Btn)
+        public KvizKezelo(List<KvizFeladat> tizFeladat, List<Button> lapGombok, TextBlock kerdes_Lbl, Label kerdes_BG, Button aValasz, Button bValasz, Button cValasz, Button dValasz, Label index_Lbl, Button prev_Btn, Button next_Btn, Button kiertekeles_Btn)
         {
             // Értékek beállítása
+            this.lapGombok = lapGombok;
             this.osszesFeladat = tizFeladat;
             this.feladat = tizFeladat[0];
             this.index = 1;
-            //this.valaszok = ValaszKevero(feladat.Valaszok);
             this.index_Lbl = index_Lbl;
             this.kerdes_Lbl = kerdes_Lbl;
             this.kerdes_BG = kerdes_BG;
@@ -57,15 +58,8 @@ namespace TanulasEllenorzoKviz
         }
 
         public KvizFeladat Feladat { get => feladat; }
-
-        //private List<string> ValaszKevero(List<string> valaszok)
-        //{
-        //    Random rng = new Random();
-
-        //    var kevert = valaszok.OrderBy(x => rng.Next()).ToList();
-
-        //    return kevert;
-        //}
+        public List<KvizFeladat> TizFeladat { get => osszesFeladat; }
+        public List<Button> LapGombok { get => lapGombok; }
 
         public void Mutasd()
         {
@@ -106,6 +100,16 @@ namespace TanulasEllenorzoKviz
                 index--;
                 feladat = osszesFeladat[index - 1];
             }
+
+            next_Btn.IsEnabled = (index == 10) ? false : true;
+            prev_Btn.IsEnabled = (index == 1) ? false : true;
+        }
+
+        public void IranyGomb(int lapIndex)
+        {
+            index = lapIndex + 1;
+            feladat = osszesFeladat[lapIndex];
+
             next_Btn.IsEnabled = (index == 10) ? false : true;
             prev_Btn.IsEnabled = (index == 1) ? false : true;
         }
@@ -125,15 +129,42 @@ namespace TanulasEllenorzoKviz
         public void EredmenyAblak()
         {
             string szoveg = "";
+            int pont = 0;
 
             KiertekelesAblak ablak2 = new KiertekelesAblak();
 
             foreach (KvizFeladat f in osszesFeladat)
             {
+                bool joLett = f.JoIndex == f.KivalasztottIndex;
+
+                pont += f.Pont;
+
+                szoveg += osszesFeladat.IndexOf(f) + 1 + ".\n";
                 szoveg += f.Kerdes + "\n";
-                
+                for (int i = 0; i < f.Valaszok.Count; i++)
+                { 
+                    if (joLett)
+                    {
+                        if (i == f.JoIndex)
+                            szoveg += f.Valaszok[i] + " ✔\n";
+                        else
+                            szoveg += f.Valaszok[i] + "\n";
+                    }
+                    else
+                    {
+                        if (i == f.KivalasztottIndex)
+                            szoveg += f.Valaszok[i] + " ✖\n";
+                        else if (i == f.JoIndex)
+                            szoveg += f.Valaszok[i] + " ━\n";
+                        else
+                            szoveg += f.Valaszok[i] + "\n";
+                    }
+                }
+                szoveg += "                                   " + f.Pont + "p.\n";
+                szoveg += "\n";
             }
 
+            szoveg += $"\n{pont}/10p";
             ablak2.eredmenySzoveg_TB.Text = szoveg;
 
             ablak2.ShowDialog();

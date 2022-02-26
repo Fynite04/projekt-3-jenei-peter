@@ -36,8 +36,18 @@ namespace TanulasEllenorzoKviz
         public string Temakor { get => temakor; }
         public string Kerdes { get => kerdes; }
         public List<string> Valaszok { get => valaszok; }
-        public string JoValasz { get => valaszok[0]; }
+        public int JoIndex { get => joIndex; }
         public int KivalasztottIndex { get => kivalaszottIndex; set => kivalaszottIndex = value; }
+        public int Pont 
+        { 
+            get 
+            {
+                if (kivalaszottIndex == joIndex)
+                    return 1;
+                else
+                    return 0;
+            } 
+        }
 
         private List<string> ValaszKevero(List<string> valaszok)
         {
