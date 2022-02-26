@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace TanulasEllenorzoKviz
 {
@@ -14,6 +15,7 @@ namespace TanulasEllenorzoKviz
         List<string> tantargyakNevLista = new List<string>();
         List<string> temakorokLista = new List<string>();
         List<KvizFeladat> osszesFeladatLista = new List<KvizFeladat>();
+        List<Button> valaszGombok = new List<Button>();
         KvizKezelo kviz;
 
         public MainWindow()
@@ -29,8 +31,14 @@ namespace TanulasEllenorzoKviz
             index_Lbl.Visibility = Visibility.Hidden;
             prev_Btn.Visibility = Visibility.Hidden;
             next_Btn.Visibility = Visibility.Hidden;
+            kiertekeles_Btn.Visibility = Visibility.Hidden;
 
             tantargy_CBx.ItemsSource = tantargyakNevLista;
+
+            valaszGombok.Add(aValasz_Btn);
+            valaszGombok.Add(bValasz_Btn);
+            valaszGombok.Add(cValasz_Btn);
+            valaszGombok.Add(dValasz_Btn);
         }
 
         void FajlokBeolvasasa()
@@ -74,8 +82,12 @@ namespace TanulasEllenorzoKviz
             var tizFeladat = RandomKvizFeladatok((string)tantargy_CBx.SelectedItem, (string)temakor_CBx.SelectedItem);
             //var kevertValaszok = ValaszKevero(tizFeladat[0].Valaszok);
 
-            kviz = new KvizKezelo(tizFeladat, kerdes_Lbl, kerdes_BG, aValasz_Btn, bValasz_Btn, cValasz_Btn, dValasz_Btn, index_Lbl, prev_Btn, next_Btn);
+            kviz = new KvizKezelo(tizFeladat, kerdes_Lbl, kerdes_BG, aValasz_Btn, bValasz_Btn, cValasz_Btn, dValasz_Btn, index_Lbl, prev_Btn, next_Btn, kiertekeles_Btn);
             kviz.Mutasd();
+
+            tantargy_CBx.IsEnabled = false;
+            temakor_CBx.IsEnabled = false;
+            tesztInditasa_Btn.IsEnabled = false;
         }
 
         List<KvizFeladat> RandomKvizFeladatok(string tantargy, string temakor)
@@ -116,8 +128,16 @@ namespace TanulasEllenorzoKviz
 
         private void valasz_Btn_Click(object sender, RoutedEventArgs e)
         {
-            
+            Button valasztottGomb = (Button)sender;
+            //valasztottGomb.Background = System.Windows.Media.Brushes.LightBlue;
+            int gombIndex = valaszGombok.IndexOf(valasztottGomb);
+            kviz.Feladat.KivalasztottIndex = gombIndex;
+            kviz.Mutasd();
         }
 
+        private void kiertekeles_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            kviz.EredmenyAblak();
+        }
     }
 }

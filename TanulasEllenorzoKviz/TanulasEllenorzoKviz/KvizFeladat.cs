@@ -12,6 +12,8 @@ namespace TanulasEllenorzoKviz
         string temakor;
         string kerdes;
         List<string> valaszok = new List<string>();
+        int kivalaszottIndex = -1;
+        int joIndex;
 
         public KvizFeladat(string sor, string tantargy)
         {
@@ -25,6 +27,9 @@ namespace TanulasEllenorzoKviz
             this.valaszok.Add(sorSplitArr[3]);
             this.valaszok.Add(sorSplitArr[4]);
             this.valaszok.Add(sorSplitArr[5]);
+            this. joIndex = valaszok.IndexOf(sorSplitArr[2]);
+
+            valaszok = ValaszKevero(valaszok);
         }
 
         public string Tantargy { get => tantargy; }
@@ -32,5 +37,15 @@ namespace TanulasEllenorzoKviz
         public string Kerdes { get => kerdes; }
         public List<string> Valaszok { get => valaszok; }
         public string JoValasz { get => valaszok[0]; }
+        public int KivalasztottIndex { get => kivalaszottIndex; set => kivalaszottIndex = value; }
+
+        private List<string> ValaszKevero(List<string> valaszok)
+        {
+            Random rng = new Random();
+
+            var kevert = valaszok.OrderBy(x => rng.Next()).ToList();
+
+            return kevert;
+        }
     }
 }

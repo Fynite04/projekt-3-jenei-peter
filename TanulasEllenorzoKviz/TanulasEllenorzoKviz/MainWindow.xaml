@@ -19,9 +19,10 @@
         <Button x:Name="bValasz_Btn" Content="Válasz B" HorizontalAlignment="Left" Margin="304,0,0,0" VerticalAlignment="Center" Height="65" Width="275" Visibility="Visible" Click="valasz_Btn_Click"/>
         <Button x:Name="cValasz_Btn" Content="Válasz C" HorizontalAlignment="Left" Margin="10,235,0,0" VerticalAlignment="Top" Height="65" Width="275" Visibility="Visible" Click="valasz_Btn_Click"/>
         <Button x:Name="dValasz_Btn" Content="Válasz D" HorizontalAlignment="Left" Margin="304,235,0,0" VerticalAlignment="Top" Height="65" Width="275" Visibility="Visible" Click="valasz_Btn_Click"/>
-        <Button x:Name="next_Btn" Content="🡪" HorizontalAlignment="Left" Margin="539,339,0,0" VerticalAlignment="Top" Width="40" Height="35" FontSize="20" Click="next_Btn_Click"/>
-        <Button x:Name="prev_Btn" Content="🡨" HorizontalAlignment="Left" Margin="10,339,0,0" VerticalAlignment="Top" Width="40" Height="35" FontSize="20" Click="prev_Btn_Click"/>
-        <Rectangle HorizontalAlignment="Left" Height="18" Margin="55,348,0,0" Stroke="Black" VerticalAlignment="Top" Width="479"/>
-        <Label x:Name="index_Lbl" Content="X/10" HorizontalAlignment="Left" Margin="277,321,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+        <Button x:Name="next_Btn" Content="🡪" HorizontalAlignment="Left" Margin="539,322,0,0" VerticalAlignment="Top" Width="40" Height="35" FontSize="20" Click="next_Btn_Click"/>
+        <Button x:Name="prev_Btn" Content="🡨" HorizontalAlignment="Left" Margin="10,322,0,0" VerticalAlignment="Top" Width="40" Height="35" FontSize="20" Click="prev_Btn_Click"/>
+        <Rectangle HorizontalAlignment="Left" Height="18" Margin="55,331,0,0" Stroke="Black" VerticalAlignment="Top" Width="479"/>
+        <Label x:Name="index_Lbl" Content="X/10" HorizontalAlignment="Left" Margin="277,304,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+        <Button x:Name="kiertekeles_Btn" Content="Kiértékelés" HorizontalAlignment="Left" Margin="237,354,0,0" VerticalAlignment="Top" Width="115" Click="kiertekeles_Btn_Click"/>
     </Grid>
 </Window>

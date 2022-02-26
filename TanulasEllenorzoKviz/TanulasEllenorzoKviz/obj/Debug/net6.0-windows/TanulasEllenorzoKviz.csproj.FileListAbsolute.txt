@@ -19,3 +19,5 @@ D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\
 D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\bin\Debug\net6.0-windows\ref\TanulasEllenorzoKviz.dll
 D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\bin\Debug\net6.0-windows\TanulasEllenorzoKviz.pdb
 D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\obj\Debug\net6.0-windows\TanulasEllenorzoKviz.genruntimeconfig.cache
+D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\obj\Debug\net6.0-windows\KiertekelesAblak.g.cs
+D:\Pete\Prog\C#\projekt-3-jenei-peter\TanulasEllenorzoKviz\TanulasEllenorzoKviz\obj\Debug\net6.0-windows\KiertekelesAblak.baml
