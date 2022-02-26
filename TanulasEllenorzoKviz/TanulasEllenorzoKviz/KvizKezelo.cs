@@ -55,6 +55,10 @@ namespace TanulasEllenorzoKviz
             prev_Btn.Visibility = Visibility.Visible;
             next_Btn.Visibility = Visibility.Visible;
             kiertekeles_Btn.Visibility = Visibility.Visible;
+            foreach (Button btn in lapGombok)
+            {
+                btn.Visibility = Visibility.Visible;
+            }
         }
 
         public KvizFeladat Feladat { get => feladat; }
@@ -79,7 +83,7 @@ namespace TanulasEllenorzoKviz
 
             if (feladat.KivalasztottIndex != -1)
             {
-                valaszGombok[feladat.KivalasztottIndex].Background = Brushes.LightBlue;
+                valaszGombok[feladat.KivalasztottIndex].Background = Brushes.LightGreen;
             }
 
             if (OsszesKesz())
@@ -164,7 +168,7 @@ namespace TanulasEllenorzoKviz
                 szoveg += "\n";
             }
 
-            szoveg += $"\n{pont}/10p";
+            szoveg += $"\n{pont}/10p.";
             ablak2.eredmenySzoveg_TB.Text = szoveg;
 
             ablak2.ShowDialog();

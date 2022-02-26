@@ -25,15 +25,7 @@ namespace TanulasEllenorzoKviz
             InitializeComponent();
             FajlokBeolvasasa();
 
-            kerdes_BG.Visibility = Visibility.Hidden;
-            aValasz_Btn.Visibility = Visibility.Hidden;
-            bValasz_Btn.Visibility = Visibility.Hidden;
-            cValasz_Btn.Visibility = Visibility.Hidden;
-            dValasz_Btn.Visibility = Visibility.Hidden;
-            index_Lbl.Visibility = Visibility.Hidden;
-            prev_Btn.Visibility = Visibility.Hidden;
-            next_Btn.Visibility = Visibility.Hidden;
-            kiertekeles_Btn.Visibility = Visibility.Hidden;
+            
 
             tantargy_CBx.ItemsSource = tantargyakNevLista;
 
@@ -52,6 +44,8 @@ namespace TanulasEllenorzoKviz
             lapGombok.Add(lap8_Btn);
             lapGombok.Add(lap9_Btn);
             lapGombok.Add(lap10_Btn);
+            
+            ElemekEltuntetese();
         }
 
         void FajlokBeolvasasa()
@@ -67,6 +61,24 @@ namespace TanulasEllenorzoKviz
                 {
                     osszesFeladatLista.Add(new KvizFeladat(sorok[s], tantargyNev));
                 }
+            }
+        }
+
+        private void ElemekEltuntetese()
+        {
+            kerdes_BG.Visibility = Visibility.Hidden;
+            aValasz_Btn.Visibility = Visibility.Hidden;
+            bValasz_Btn.Visibility = Visibility.Hidden;
+            cValasz_Btn.Visibility = Visibility.Hidden;
+            dValasz_Btn.Visibility = Visibility.Hidden;
+            index_Lbl.Visibility = Visibility.Hidden;
+            prev_Btn.Visibility = Visibility.Hidden;
+            next_Btn.Visibility = Visibility.Hidden;
+            kiertekeles_Btn.Visibility = Visibility.Hidden;
+
+            foreach (Button btn in lapGombok)
+            {
+                btn.Visibility = Visibility.Hidden;
             }
         }
 
@@ -151,6 +163,17 @@ namespace TanulasEllenorzoKviz
         private void kiertekeles_Btn_Click(object sender, RoutedEventArgs e)
         {
             kviz.EredmenyAblak();
+
+            tantargy_CBx.SelectedIndex = -1;
+            tantargy_CBx.IsEnabled = true;
+            temakor_CBx.SelectedIndex = -1;
+            temakor_CBx.IsEnabled = true;
+            tesztInditasa_Btn.IsEnabled = true;
+            ElemekEltuntetese();
+            foreach (Button btn in lapGombok)
+            {
+                btn.Background = Brushes.LightGray;
+            }
         }
 
         private void lapGomb_Click(object sender, RoutedEventArgs e)

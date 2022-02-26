@@ -27,9 +27,10 @@ namespace TanulasEllenorzoKviz
             this.valaszok.Add(sorSplitArr[3]);
             this.valaszok.Add(sorSplitArr[4]);
             this.valaszok.Add(sorSplitArr[5]);
-            this. joIndex = valaszok.IndexOf(sorSplitArr[2]);
 
             valaszok = ValaszKevero(valaszok);
+
+            this. joIndex = valaszok.IndexOf(sorSplitArr[2]);
         }
 
         public string Tantargy { get => tantargy; }
