@@ -1,0 +1,25 @@
+lencsék és tükrök;A domború lencse a képet a következőképpen jeleníti meg: ______, ha a tárgy a fókuszpont és a lencse közé kerül;nagyobb és jó oldala felfelé;nagyobb és fejjel lefelé;kisebb és jó oldala felfelé;kisebb és fejjel lefelé
+lencsék és tükrök;A tipikus tükör, amelybe otthon vagy a mosdóban nézel, egy _____ tükör;sík;konvex;konkáv;parabola
+lencsék és tükrök;Melyik típusú tükör tünteti fel a tárgyakat kisebbnek, de a látóteret nagyobbnak?;konvex;konkáv;parabola;sík
+lencsék és tükrök;A _____ nagyméretű tükrök segítségével közelebb hozza a távoli tárgyakat;teleszkóp;mikroszkóp;oszcilloszkóp;kaleidoszkóp
+lencsék és tükrök;Milyen típusú lencse a nagyító?;konvex;konkáv;sík;parabola
+lencsék és tükrök;Minek nevezzük a fénysugarak elhajlását a sebességváltozás miatt, amikor a sugarak áthaladnak egy anyagon?;fénytörés;fényelhajlás;fényszórás;tükröződés
+lencsék és tükrök;Ha 2 méterre állsz egy síktükörtől, és belenézel, a kép, amit látsz, ______ méterre lesz a tükör másik oldalától;2;4;6;8
+lencsék és tükrök;A _____ 2 domború lencsét használ egy kisebb tárgy nagyításához;mikroszkóp;oszcilloszkóp;kaleidoszkóp;teleszkóp
+lencsék és tükrök;_____ tükröt használnak az autók lámpái, hogy fénysugarakat hozzanak létre;konkáv;konvex;sík;parabola
+lencsék és tükrök;A _____ tükör olyan, mint az autó oldalsó tükrei. "A tárgyak közelebb vannak, mint amilyennek látszanak";konvex;konkáv;parabola;sík
+lencsék és tükrök;A domború tükör mindig olyan képet ad, amely _____;virtuális, egyenes, kisebb;valódi, fejjel lefelé, kisebb; virtuális, egyenes, ugyanolyan méretű; virtuális, egyenes, nagyobb
+lencsék és tükrök;A lencsével kialakított, képernyőre vetíthető képet _____ képnek nevezzük;valódi;virtuális;objektív;képzeletbeli
+hang;Ha a hang forrása távolabb van, akkor ______ hang hallható;halkabb;hangosabb;mély;magas
+hang;A puha anyag elnyeli és _____ teszi a hangot;halkabbá;hangosabbá;magasabbá;mélyebbé
+hang;A legtöbb általunk hallott hang a _____ terjedt;levegőben;gázokban;folyadékokban;szilárd anyagokban
+hang;Melyik a legjobb hangelnyelésben?;szőnyeg;üveg;fapadló;tégla
+hang;A hangsebesség vízben _____ m/s;1500;5000;3000;330
+hang;Az autógyártók úgy próbálják csendesebbé tenni az autókat, hogy _____;puha anyaggal bélelik az autó belsejét;selyemmel bélelik az autó belsejét;fémbéléssel bélelik az autó belsejét;bezárják az ajtókat és az ablakokat
+hang;Melyik anyagon keresztül terjed gyorsabban a hang?;fém;víz;levegő;tégla
+hang;____ károsíthatja a fülünket;folyamatos hangos zaj;hangos zaj;zene;zaj
+hang;Ha hosszú időt töltünk hangos hangszóró közelében, az _____;károsíthatja a fülünket;károsítja a dobhártyánkat;károsíthatja a belső fület;károsíthatja a félkör alakú hallójáratunkat
+hang;Hangsebesség jele:;c;S;z;e
+hang;Hangsebesség: _____ m/s (száraz levegőben 20°C-on):;343;380;313;366
+hang;A _____-nál/nél nagyobb frekvenciájú hanghullámokat szuperszonikus hullámoknak nevezzük;20 kHz;15 kHz;25 kHz; 30 kHz
+hang;A _____-nál/nél kisebb frekvenciájú hanghullámokat szubszónikus hullámoknak nevezzük;20 Hz;10 Hz;30 Hz;40 Hz;

@@ -8,6 +8,7 @@ namespace TanulasEllenorzoKviz
 {
     class KvizFeladat
     {
+        // Mezők
         string tantargy;
         string temakor;
         string kerdes;
@@ -15,6 +16,7 @@ namespace TanulasEllenorzoKviz
         int kivalaszottIndex = -1;
         int joIndex;
 
+        // Konstruktor
         public KvizFeladat(string sor, string tantargy)
         {
             this.tantargy = tantargy;
@@ -33,6 +35,7 @@ namespace TanulasEllenorzoKviz
             this. joIndex = valaszok.IndexOf(sorSplitArr[2]);
         }
 
+        // Tulajdonságok
         public string Tantargy { get => tantargy; }
         public string Temakor { get => temakor; }
         public string Kerdes { get => kerdes; }
@@ -50,6 +53,7 @@ namespace TanulasEllenorzoKviz
             } 
         }
 
+        // Randomizálja a válaszokat a listában, hogy kiszámíthatatlan legyen a megjelenítése
         private List<string> ValaszKevero(List<string> valaszok)
         {
             Random rng = new Random();

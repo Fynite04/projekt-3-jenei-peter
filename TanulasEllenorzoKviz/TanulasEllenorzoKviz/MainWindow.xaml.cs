@@ -13,27 +13,29 @@ namespace TanulasEllenorzoKviz
     /// </summary>
     public partial class MainWindow : Window
     {
+        // Mezők
         List<string> tantargyakNevLista = new List<string>();
-        List<string> temakorokLista = new List<string>();
+        List<string> temakorokLista;
         List<KvizFeladat> osszesFeladatLista = new List<KvizFeladat>();
         List<Button> valaszGombok = new List<Button>();
         List<Button> lapGombok = new List<Button>();
         KvizKezelo kviz;
 
+        // Konstruktor
         public MainWindow()
         {
             InitializeComponent();
             FajlokBeolvasasa();
 
-            
-
             tantargy_CBx.ItemsSource = tantargyakNevLista;
 
+            // Válasz gombok
             valaszGombok.Add(aValasz_Btn);
             valaszGombok.Add(bValasz_Btn);
             valaszGombok.Add(cValasz_Btn);
             valaszGombok.Add(dValasz_Btn);
 
+            // 10 lapgomb
             lapGombok.Add(lap1_Btn);
             lapGombok.Add(lap2_Btn);
             lapGombok.Add(lap3_Btn);
@@ -48,15 +50,21 @@ namespace TanulasEllenorzoKviz
             ElemekEltuntetese();
         }
 
-        void FajlokBeolvasasa()
+        // Feladat fájlok beolvasása
+        private void FajlokBeolvasasa()
         {
+            // Feladat fájlok
             string[] fajlok = Directory.GetFiles(@".\Feladatok\", "*.txt");
+
+            // Minden feladat fájl...
             for (int i = 0; i < fajlok.Length; i++)
             {
                 string tantargyNev = fajlok[i].Substring(12, fajlok[i].Length - 16);
                 tantargyakNevLista.Add(tantargyNev);
 
-                var sorok = File.ReadAllLines(fajlok[i], System.Text.Encoding.GetEncoding("iso-8859-1"));
+                var sorok = File.ReadAllLines(fajlok[i]);
+                // ...minden elemét hozzáadja egy listához mint újan példányosított
+                // KvizFeladat objektumokat
                 for (int s = 0; s < sorok.Length; s++)
                 {
                     osszesFeladatLista.Add(new KvizFeladat(sorok[s], tantargyNev));
@@ -64,6 +72,7 @@ namespace TanulasEllenorzoKviz
             }
         }
 
+        // Bizonyos elemek eltüntetése (ha jelenleg nincs futó kvíz)
         private void ElemekEltuntetese()
         {
             kerdes_BG.Visibility = Visibility.Hidden;
@@ -82,40 +91,53 @@ namespace TanulasEllenorzoKviz
             }
         }
 
+        // Tantárgy változtatása / választása esetén
         private void tantargy_CBx_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
+            temakorokLista = new List<string>();
+            // Témakör választó ComboBox bekapcsolása
             temakor_CBx.IsEnabled = true;
             string kijeloltTantargy = (string)tantargy_CBx.SelectedItem;
 
+            // A kiválaszott tantárgy alapján beállítja a kiválasztható témaköröket
             foreach (KvizFeladat f in osszesFeladatLista)
             {
-                if (!temakorokLista.Contains(f.Temakor))
+                if (kijeloltTantargy == f.Tantargy && !temakorokLista.Contains(f.Temakor))
                     temakorokLista.Add(f.Temakor);
             }
-
             temakor_CBx.ItemsSource = temakorokLista;
         }
 
+        // Témakör változtatása / választása esetén
         private void temakor_CBx_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
+            // A Teszt indítása gomb engedélyezése
             tesztInditasa_Btn.IsEnabled = true;
         }
 
-        // START
+        // Teszt indítása gomb megnyomása esetén
         private void tesztInditasa_Btn_Click(object sender, RoutedEventArgs e)
         {
+            // Kiválaszt 10 feladatot
             var tizFeladat = RandomKvizFeladatok((string)tantargy_CBx.SelectedItem, (string)temakor_CBx.SelectedItem);
 
+            // Új KvízKezelőt indít és láthatóvá teszi az eddig rejtett elemeket
             kviz = new KvizKezelo(tizFeladat, lapGombok, kerdes_Lbl, kerdes_BG, aValasz_Btn, bValasz_Btn, cValasz_Btn, dValasz_Btn, index_Lbl, prev_Btn, next_Btn, kiertekeles_Btn);
             kviz.Mutasd();
 
+            // Kikapcsolja a tantárgy és témakör választót, valamint a Teszt indítása gombot
             tantargy_CBx.IsEnabled = false;
             temakor_CBx.IsEnabled = false;
             tesztInditasa_Btn.IsEnabled = false;
+
+            // Ablak címét megváltoztatja
+            this.Title = $"Kvíz: {tantargy_CBx.Text} - {temakor_CBx.Text}";
         }
 
+        // Random 10 feladat kiválasztása a kiválasztott tantárgy és a témakör alapján
         List<KvizFeladat> RandomKvizFeladatok(string tantargy, string temakor)
         {
+            // Összes adott tantárgyú és témakörű feladat
             List<KvizFeladat> tmpFeladatLista = new List<KvizFeladat>();
             foreach (KvizFeladat f in osszesFeladatLista)
             {
@@ -123,8 +145,8 @@ namespace TanulasEllenorzoKviz
                     tmpFeladatLista.Add(f);
             }
 
+            // 10 random feladat
             List<KvizFeladat> tizFeladat = new List<KvizFeladat>();
-
             Random rng = new Random();
             for (int i = 0; i < 10; i++)
             {
@@ -136,39 +158,46 @@ namespace TanulasEllenorzoKviz
             return tizFeladat;
         }
 
-        // NEXT
+        // Következő gomb megnyomása esetén
         private void next_Btn_Click(object sender, RoutedEventArgs e)
         {
             kviz.IranyGomb(true);
             kviz.Mutasd();
         }
 
-        // PREVIOUS
+        // Előző gomb megnyomása esetén
         private void prev_Btn_Click(object sender, RoutedEventArgs e)
         {
             kviz.IranyGomb(false);
             kviz.Mutasd();
         }
 
+        // 4 válaszgomb megnyomása esetén
         private void valasz_Btn_Click(object sender, RoutedEventArgs e)
         {
             Button valasztottGomb = (Button)sender;
             int gombIndex = valaszGombok.IndexOf(valasztottGomb);
             kviz.Feladat.KivalasztottIndex = gombIndex;
+
+            // Lap gomb háttérszín megváltoztatása
             kviz.LapGombok[kviz.TizFeladat.IndexOf(kviz.Feladat)].Background = Brushes.LightGreen;
 
             kviz.Mutasd();
         }
 
+        // Kiértékelés gomb megyomása esetén
         private void kiertekeles_Btn_Click(object sender, RoutedEventArgs e)
         {
+            // Eredmény ablak nyitása
             kviz.EredmenyAblak();
 
+            // Alapértékek visszaállítása
             tantargy_CBx.SelectedIndex = -1;
             tantargy_CBx.IsEnabled = true;
             temakor_CBx.SelectedIndex = -1;
             temakor_CBx.IsEnabled = true;
             tesztInditasa_Btn.IsEnabled = true;
+            this.Title = "Tanulás Ellenőrző Kvíz";
             ElemekEltuntetese();
             foreach (Button btn in lapGombok)
             {
@@ -176,6 +205,7 @@ namespace TanulasEllenorzoKviz
             }
         }
 
+        // Lap gombok megnyomása esetén
         private void lapGomb_Click(object sender, RoutedEventArgs e)
         {
             int lapGombIndex = lapGombok.IndexOf((Button)sender);

@@ -11,11 +11,10 @@ namespace TanulasEllenorzoKviz
 {
     class KvizKezelo
     {
+        // Mezők
         List<KvizFeladat> osszesFeladat;
         KvizFeladat feladat;
         int index;
-        //List<string> valaszok;
-
         Label index_Lbl;
         TextBlock kerdes_Lbl;
         Label kerdes_BG;
@@ -25,6 +24,7 @@ namespace TanulasEllenorzoKviz
         Button next_Btn;
         Button kiertekeles_Btn;
 
+        // Konstruktor
         public KvizKezelo(List<KvizFeladat> tizFeladat, List<Button> lapGombok, TextBlock kerdes_Lbl, Label kerdes_BG, Button aValasz, Button bValasz, Button cValasz, Button dValasz, Label index_Lbl, Button prev_Btn, Button next_Btn, Button kiertekeles_Btn)
         {
             // Értékek beállítása
@@ -61,54 +61,60 @@ namespace TanulasEllenorzoKviz
             }
         }
 
+        // Tulajdonságok
         public KvizFeladat Feladat { get => feladat; }
         public List<KvizFeladat> TizFeladat { get => osszesFeladat; }
         public List<Button> LapGombok { get => lapGombok; }
 
+        // Elemek mutatása, frissítése
         public void Mutasd()
         {
+            // Kérdések, válaszok, index értékének frissítése
             kerdes_Lbl.Text = feladat.Kerdes;
-
             valaszGombok[0].Content = feladat.Valaszok[0];
             valaszGombok[1].Content = feladat.Valaszok[1];
             valaszGombok[2].Content = feladat.Valaszok[2];
             valaszGombok[3].Content = feladat.Valaszok[3];
-
             index_Lbl.Content = index + "/10";
 
+            // Gombok színének alapértelmezettre állítása
             valaszGombok[0].Background = Brushes.LightGray;
             valaszGombok[1].Background = Brushes.LightGray;
             valaszGombok[2].Background = Brushes.LightGray;
             valaszGombok[3].Background = Brushes.LightGray;
 
+            // Kiválasztott válasz gomb színének állítása
             if (feladat.KivalasztottIndex != -1)
-            {
                 valaszGombok[feladat.KivalasztottIndex].Background = Brushes.LightGreen;
-            }
 
+            // Ha kész az összes feladat, a Kiértékelés gombot engedélyezi
             if (OsszesKesz())
-            {
                 kiertekeles_Btn.IsEnabled = true;
-            }
         }
 
+        // A 2 oldalsó iránygombok megnyomása esetén változtatja a jelenlegi feladatot
         public void IranyGomb(bool elore)
         {
+            // Tovább gomb
             if (elore)
             {
                 index++;
                 feladat = osszesFeladat[index - 1];
             }
+            // Vissza gomb
             else
             {
                 index--;
                 feladat = osszesFeladat[index - 1];
             }
 
+            // Kikapcsolja / bekapcsolja a gombokat az index szerint, hogy ne
+            // lehessen min. alá vagy a max. felé menni
             next_Btn.IsEnabled = (index == 10) ? false : true;
             prev_Btn.IsEnabled = (index == 1) ? false : true;
         }
 
+        // A 10 középső iránygombok alapján változtatja a jelenlegi feladatot
         public void IranyGomb(int lapIndex)
         {
             index = lapIndex + 1;
@@ -118,6 +124,7 @@ namespace TanulasEllenorzoKviz
             prev_Btn.IsEnabled = (index == 1) ? false : true;
         }
 
+        // Visszaküldi, hogy kész van e az összes feladat
         private bool OsszesKesz()
         {
             bool keszVagyNem = true;
@@ -130,6 +137,7 @@ namespace TanulasEllenorzoKviz
             return keszVagyNem;
         }
 
+        // A Kiértékelés gomb megnyomása esetén új ablakot nyit az eredménnyel
         public void EredmenyAblak()
         {
             string szoveg = "";
@@ -137,16 +145,21 @@ namespace TanulasEllenorzoKviz
 
             KiertekelesAblak ablak2 = new KiertekelesAblak();
 
+            // A 10 random kérdésen végigmegy
             foreach (KvizFeladat f in osszesFeladat)
             {
                 bool joLett = f.JoIndex == f.KivalasztottIndex;
 
                 pont += f.Pont;
 
+                // Index szám
                 szoveg += osszesFeladat.IndexOf(f) + 1 + ".\n";
+                // Kérdés
                 szoveg += f.Kerdes + "\n";
+                // 4 válasz
                 for (int i = 0; i < f.Valaszok.Count; i++)
                 { 
+                    // Ha jól sikerült
                     if (joLett)
                     {
                         if (i == f.JoIndex)
@@ -154,6 +167,7 @@ namespace TanulasEllenorzoKviz
                         else
                             szoveg += f.Valaszok[i] + "\n";
                     }
+                    // Ha nem sikerült jól
                     else
                     {
                         if (i == f.KivalasztottIndex)
@@ -164,10 +178,12 @@ namespace TanulasEllenorzoKviz
                             szoveg += f.Valaszok[i] + "\n";
                     }
                 }
+                // Pont
                 szoveg += "                                   " + f.Pont + "p.\n";
                 szoveg += "\n";
             }
 
+            // Összes pont (X/10)
             szoveg += $"\n{pont}/10p.";
             ablak2.eredmenySzoveg_TB.Text = szoveg;
 

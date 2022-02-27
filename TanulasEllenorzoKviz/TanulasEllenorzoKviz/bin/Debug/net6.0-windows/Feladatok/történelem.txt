@@ -1,39 +1,39 @@
-magyar történelem;Mi volt I.István neve a kerszetelése elõtt;Vajk;Géza;Sarolt;egyik sem
-magyar történelem;Mikor végezték ki  a 13 aradi vértanut;1849 okt. 6;1849 okt. 6;1849 aug. 13;1849 apr. 14.
-magyar történelem;Mi történt 1849 április 14-én?;Függetlenségi nyilatkozat kiadása;Áprilisi törvények;Magyar Szabadságharc;Pesti forradalom
-magyar történelem;Mikor lesz magyarország köztársaság?;egyik sem; 1981 okt 23;1956 okt 23;1848 marc 15
-magyar történelem;Kit nevezünk második honalapítónak?;IV Béla; I István;Géza fejedelem; I Laszló
-magyar történelem;Mikor halt ki az Árpád-ház?;1301;1038;1222;az Árpádház nem halt ki!
-magyar történelem;Mikor volt Nándorfehérvári diadal?;1456;1440;1454;1546;
-magyar történelem;Mikor volt(ak) a hasburg ház trónfosztása(i)?;mindegyik;1620;1849;1707
-magyar történelem;Ki vezette a parasztháborút 1514ben?;Dózsa György;Kossuth Lajos;Szondi Miklós;egyiksem
-magyar történelem;Ki uralkodott 1458tól 1490ig Magyarországon?;I Mátyás;I István;IV Béla;Ferenc József
-magyar történelem;Mikor kezdõdik a 15éves háború?;1591;1606;1621;1576
-magyar történelem;Kik között volt a karlócai béke 1699ben?;Szetn Liga-Törökök;Törökök-Magyarok;Poroszok-Franciák;egyik sem
-magyar történelem;Mi történt 1222ben?;Az aranybula kiadása;Semmi;Kihal az Árpádház;I István szenté avatása
-magyar reformkor;Mit jelent a diéta szó?;országgyûlés;helytartótanács;nemes;egyik sem
-magyar reformkor;Kik alkották a felsõtáblát?;bárók;vármegyék követei;egyik sem;mindkettõ
-magyar reformkor;Mikor volt az elsõ reformországgyûlés?;1832;1830;1842;1848
-magyar reformkor;Mikor jelent meg Széchenyi a Világ címû írása?;1831;1827;1848;1840
-magyar reformkor;Mely reforprogram tartalmazta a törvény elõtti egyenlõséget?;mindkettõ;Kossuth programja;Szechenyi programja;egyik sem
-magyar reformkor;Mely íromány rendszerezte Széchenyi 12pontját?;Stádium;Pesti Hírlap;Világ;Hitel
-magyar reformkor;Mikor lett a magyar nyelv ujra államnyelv?;1844;1848;1956;1843
-magyar reformkor;Mikor volt az utolsó rendi országgyûlés?;1847;1848;1849;1846
-magyar reformkor;Ki(k) álltak a reformellenzék élén?;mindhárman;Kossuth Lajos;Batyhányi Lajos;Deák Ferenc
-magyar reformkor;Pesti forradalom idõpontja?;1848.03.15.;1848.04.11.;1848.02.;egyik sem
-magyar reformkor;Mikor szetesítették az áprilisi törvényeket?;egyik sem;1848.04.15.;1848.04.23;1848.04.30
-magyar reformkor;Mi történt 1849 április 14-én?;Függetlenségi nyilatkozat kiadása;Áprilisi törvények;Magyar Szabadságharc;Pesti forradalom
-magyar reformkor;Hol volt a magyar fegyverletétel?;Világosnál;Bécsnél;Aradon;Pesten
-magyar reformkor;Mikor voltak a kivégzések?;1849 okt. 6;1849 okt. 6;1849 aug. 13;1849 apr. 14.
-nagyhatalmi politika; Mikor alapúlt meg az Olasz Királyság?;1861;1860;1866;1870
-nagyhatalmi politika;Melyék háború volt 1853 és 1856 között?;krími háború;Elsõ világháború;Szárd-Osztrák;Porosz-Osztrák
-nagyhatalmi politika;Ki volt az USA elnöke 1860tól?;Abraham Lincoln;George Washington;Otto von Bismarck;Franklin D. Roosevelt
-nagyhatalmi politika;Mely ország gyarmatosít Azsiában?;mindkettõ;Japán;Oroszország;Egyik sem
-nagyhatalmi politika;A 20. század legelején ki vezette a Bolsevikokat?;Lenin;Stálin;Marx;Bismarc
-nagyhatalmi politika;Indiából milyen gyersanyagot szerzett be Nagy-Brittania?;gyapot;fémek;szén;egyik sem
-nagyhatalmi politika;Ki találta fel a géppuskát?;Hiram Maxim;Henry Ford;Thomas Edison;Alfred Nobel
-nagyhatalmi politika;Mely találmány nem a 2. ipari forradalomból származik?;mindegyik;gözgép;távíró;fecskendõ
-nagyhatalmi politika;Mikor jött létre a kettõs szövetség?;1879;1880;1888;egyik sem
-nagyhatalmi politika;Hogy hívták az Olaszország,Németország és az Osztrák-Magyar monarchia szövetségét a 19. század legvégén?;hármas szövetség;antant;központi hatalmak;egyik sem
-nagyhatalmi politika;Miért jött létre az antant?;Válaszul a kettõs szövetség létrejöttére;Mert az oroszok és a franciák régen is szövetségben álltak;mindkettõ;egyik sem
-nagyhatalmi politika;Melyék ország volt tagja az antantnak 1893ban?;Franciaország;Nagy-Britania;Olaszország;mindegyik
+magyar tÃ¶rtÃ©nelem;Mi volt I. IstvÃ¡n neve a kerszetelÃ©se elÅ‘tt;Vajk;GÃ©za;Sarolt;egyik sem
+magyar tÃ¶rtÃ©nelem;Mikor vÃ©geztÃ©k ki a 13 aradi vÃ©rtanÃºt;1849 okt. 6;1849 okt. 6;1849 aug. 13;1849 Ã¡pr. 14
+magyar tÃ¶rtÃ©nelem;Mi tÃ¶rtÃ©nt 1849 Ã¡prilis 14-Ã©n?;FÃ¼ggetlensÃ©gi nyilatkozat kiadÃ¡sa;Ãprilisi tÃ¶rvÃ©nyek;Magyar SzabadsÃ¡gharc;Pesti forradalom
+magyar tÃ¶rtÃ©nelem;Mikor lett magyarorszÃ¡g kÃ¶ztÃ¡rsasÃ¡g?;egyik sem; 1981 okt. 23;1956 okt. 23;1848 mÃ¡rc. 15
+magyar tÃ¶rtÃ©nelem;Kit nevezÃ¼nk mÃ¡sodik honalapÃ­tÃ³nak?;IV. BÃ©la; I. IstvÃ¡n;GÃ©za fejedelem; I. LÃ¡szlÃ³
+magyar tÃ¶rtÃ©nelem;Mikor halt ki az ÃrpÃ¡d-hÃ¡z?;1301;1038;1222;Az ÃrpÃ¡d-hÃ¡z nem halt ki
+magyar tÃ¶rtÃ©nelem;Mikor volt NÃ¡ndorfehÃ©rvÃ¡ri diadal?;1456;1440;1454;1546
+magyar tÃ¶rtÃ©nelem;Mikor volt(ak) a Habsburg-hÃ¡z trÃ³nfosztÃ¡sa(i)?;mindegyik;1620;1849;1707
+magyar tÃ¶rtÃ©nelem;Ki vezette a paraszthÃ¡borÃºt 1514-ben?;DÃ³zsa GyÃ¶rgy;Kossuth Lajos;Szondi MiklÃ³s;egyik sem
+magyar tÃ¶rtÃ©nelem;Ki uralkodott 1458-tÃ³l 1490-ig MagyarorszÃ¡gon?;I. MÃ¡tyÃ¡s;I. IstvÃ¡n;IV. BÃ©la;Ferenc JÃ³zsef
+magyar tÃ¶rtÃ©nelem;Mikor kezdÅ‘dÃ¶tt a 15Ã©ves hÃ¡borÃº?;1591;1606;1621;1576
+magyar tÃ¶rtÃ©nelem;Kik kÃ¶zÃ¶tt volt a karlÃ³cai bÃ©ke 1699-ben?;Szent Liga-TÃ¶rÃ¶kÃ¶k;TÃ¶rÃ¶kÃ¶k-Magyarok;Poroszok-FranciÃ¡k;egyik sem
+magyar tÃ¶rtÃ©nelem;Mi tÃ¶rtÃ©nt 1222-ben?;Az aranybula kiadÃ¡sa;Egyik sem;Kihalt az ÃrpÃ¡d-hÃ¡z;I. IstvÃ¡n szenttÃ© avatÃ¡sa
+magyar reformkor;Mit jelent a diÃ©ta szÃ³?;orszÃ¡ggyÅ±lÃ©s;helytartÃ³tanÃ¡cs;nemes;egyik sem
+magyar reformkor;Kik alkottÃ¡k a felsÅ‘tÃ¡blÃ¡t?;bÃ¡rÃ³k;vÃ¡rmegyÃ©k kÃ¶vetei;egyik sem;mindkettÅ‘
+magyar reformkor;Mikor volt az elsÅ‘ reformorszÃ¡ggyÅ±lÃ©s?;1832;1830;1842;1848
+magyar reformkor;Mikor jelent meg SzÃ©chenyi a VilÃ¡g cÃ­mÅ± Ã­rÃ¡sa?;1831;1827;1848;1840
+magyar reformkor;Mely reforprogram tartalmazta a tÃ¶rvÃ©ny elÅ‘tti egyenlÅ‘sÃ©get?;mindkettÅ‘;Kossuth programja;SzÃ©chenyi programja;egyik sem
+magyar reformkor;Mely Ã­romÃ¡ny rendszerezte SzÃ©chenyi 12 pontjÃ¡t?;StÃ¡dium;Pesti HÃ­rlap;VilÃ¡g;Hitel
+magyar reformkor;Mikor lett a magyar nyelv ujra Ã¡llamnyelv?;1844;1848;1956;1843
+magyar reformkor;Mikor volt az utolsÃ³ rendi orszÃ¡ggyÅ±lÃ©s?;1847;1848;1849;1846
+magyar reformkor;Ki(k) Ã¡lltak a reformellenzÃ©k Ã©lÃ©n?;mindhÃ¡rman;Kossuth Lajos;BattyhÃ¡nyi Lajos;DeÃ¡k Ferenc
+magyar reformkor;Mikor volt a Pesti forradalom?;1848.03.15;1848.04.11;1848.02;egyik sem
+magyar reformkor;Mikor szentesÃ­tettÃ©k az Ã¡prilisi tÃ¶rvÃ©nyeket?;egyik sem;1848.04.15;1848.04.23;1848.04.30
+magyar reformkor;Mi tÃ¶rtÃ©nt 1849 Ã¡prilis 14-Ã©n?;FÃ¼ggetlensÃ©gi nyilatkozat kiadÃ¡sa;Ãprilisi tÃ¶rvÃ©nyek;Magyar SzabadsÃ¡gharc;Pesti forradalom
+magyar reformkor;Hol volt a magyar fegyverletÃ©tel?;VilÃ¡gosnÃ¡l;BÃ©csnÃ©l;Aradon;Pesten
+magyar reformkor;Mikor voltak a kivÃ©gzÃ©sek?;1849 okt. 6;1849 okt. 6;1849 aug. 13;1849 Ã¡pr. 14.
+nagyhatalmi politika; Mikor alapult meg az Olasz KirÃ¡lysÃ¡g?;1861;1860;1866;1870
+nagyhatalmi politika;Milyen hÃ¡borÃº volt 1853 Ã©s 1856 kÃ¶zÃ¶tt?;KrÃ­mi hÃ¡borÃº;ElsÅ‘ vilÃ¡ghÃ¡borÃº;SzÃ¡rd-OsztrÃ¡k;Porosz-OsztrÃ¡k
+nagyhatalmi politika;Ki volt az USA elnÃ¶ke 1860-tÃ³l?;Abraham Lincoln;George Washington;Otto von Bismarck;Franklin D. Roosevelt
+nagyhatalmi politika;Mely orszÃ¡g gyarmatosÃ­tott ÃzsiÃ¡ban?;mindkettÅ‘;JapÃ¡n;OroszorszÃ¡g;egyik sem
+nagyhatalmi politika;A 20. szÃ¡zad legelejÃ©n ki vezette a Bolsevikokat?;Lenin;SztÃ¡lin;Marx;Bismarc
+nagyhatalmi politika;IndiÃ¡bÃ³l milyen gyersanyagot szerzett be Nagy-Brittania?;gyapot;fÃ©mek;szÃ©n;egyik sem
+nagyhatalmi politika;Ki talÃ¡lta fel a gÃ©ppuskÃ¡t?;Hiram Maxim;Henry Ford;Thomas Edison;Alfred Nobel
+nagyhatalmi politika;Mely talÃ¡lmÃ¡ny nem a 2. ipari forradalombÃ³l szÃ¡rmazik?;mindegyik;gÅ‘zgÃ©p;tÃ¡vÃ­rÃ³;fecskendÅ‘
+nagyhatalmi politika;Mikor jÃ¶tt lÃ©tre a kettÅ‘s szÃ¶vetsÃ©g?;1879;1880;1888;egyik sem
+nagyhatalmi politika;Hogy hÃ­vtÃ¡k az OlaszorszÃ¡g,NÃ©metorszÃ¡g Ã©s az OsztrÃ¡k-Magyar monarchia szÃ¶vetsÃ©gÃ©t a 19. szÃ¡zad legvÃ©gÃ©n?;hÃ¡rmas szÃ¶vetsÃ©g;antant;kÃ¶zponti hatalmak;egyik sem
+nagyhatalmi politika;MiÃ©rt jÃ¶tt lÃ©tre az antant?;VÃ¡laszul a kettÅ‘s szÃ¶vetsÃ©g lÃ©trejÃ¶ttÃ©re;Mert az oroszok Ã©s a franciÃ¡k rÃ©gen is szÃ¶vetsÃ©gben Ã¡lltak;mindkettÅ‘;egyik sem
+nagyhatalmi politika;Melyik orszÃ¡g volt tagja az antantnak 1893-ban?;FranciaorszÃ¡g;Nagy-Britannia;OlaszorszÃ¡g;mindegyik
