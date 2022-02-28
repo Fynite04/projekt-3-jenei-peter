@@ -195,13 +195,19 @@ namespace TanulasEllenorzoKviz
             tantargy_CBx.SelectedIndex = -1;
             tantargy_CBx.IsEnabled = true;
             temakor_CBx.SelectedIndex = -1;
-            temakor_CBx.IsEnabled = true;
-            tesztInditasa_Btn.IsEnabled = true;
+            temakor_CBx.IsEnabled = false;
+            tesztInditasa_Btn.IsEnabled = false;
+            next_Btn.IsEnabled = true;
+            kiertekeles_Btn.IsEnabled = false;
             this.Title = "Tanulás Ellenőrző Kvíz";
             ElemekEltuntetese();
             foreach (Button btn in lapGombok)
             {
                 btn.Background = Brushes.LightGray;
+            }
+            foreach (KvizFeladat f in kviz.TizFeladat)
+            {
+                f.KivalasztottIndex = -1;
             }
         }
 
